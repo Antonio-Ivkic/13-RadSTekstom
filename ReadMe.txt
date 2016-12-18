@@ -1,9 +1,24 @@
 RadSTekstom
 ===========
 
+Unicode
+-------
+Ilustracija kako .NET Framework rukuje Unicode (UTF-16) znakovima.
+
+
+NepromjenjivostStringa
+----------------------
+Ilustracija kako je String nepromjenjivi objekt.
+
+
 Funkcije
 --------
 Primjer kako metode sa znakovnim nizovima ne mijenjaju originalni već vraćaju novi objekt.
+
+
+LeksičkeUsporedbe
+-----------------
+Usporedbe tekstova vodeći računa o leksičkim pravilima za pojedine kulture.
 
 
 Base64Encoding
