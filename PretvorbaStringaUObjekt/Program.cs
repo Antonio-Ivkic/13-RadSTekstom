@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PretvorbaStringaUObjekt
+namespace Vsite.CSharp
 {
-    class Program
+    class PretvorbaStringaUObjekt
     {
         static void Main(string[] args)
         {

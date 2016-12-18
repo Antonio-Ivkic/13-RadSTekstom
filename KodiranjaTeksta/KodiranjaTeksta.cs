@@ -5,8 +5,7 @@ using System.Text;
 
 namespace Vsite.CSharp
 {
-    // primjer base-64 kodiranja
-    class Program
+    class KodiranjaTeksta
     {
         static void Main(string[] args)
         {
@@ -37,20 +36,29 @@ namespace Vsite.CSharp
             // ispišimo kodiranje koje će se koristiti
             Console.WriteLine(string.Format("*** Kodiranje: {0} ***", kodiranje.HeaderName));
             Console.WriteLine("Originalni tekst:   {0}", tekst);
+
             // iz teksta stvaramo niz bajtova
             byte[] bajtovi = kodiranje.GetBytes(tekst);
+            // ispišimo originalne bajtove
+            Console.Write("Originalni bajtovi: ");
+            foreach (byte b in bajtovi)
+                Console.Write(string.Format("0x{0:X} ", b));
+            Console.WriteLine();
+
             // na bajtove primijenimo Base64 kodiranje
             string enkodirano = Convert.ToBase64String(bajtovi);
             Console.WriteLine("Tekst u Base-64:    {0}", enkodirano);
 
             // dekodiramo bajtove
             bajtovi = Convert.FromBase64String(enkodirano);
+
             // dekodirane bajtove pretvarmo u string prema zadanom kodiranju
             Console.WriteLine("Dekodirani string:  {0}", kodiranje.GetString(bajtovi));
+
             // za usporedbu ispisujemo i pojedine bajtove
             Console.Write("Dekodirani bajtovi: ");
             foreach (byte b in bajtovi)
-                Console.Write((char)b);
+                Console.Write(string.Format("0x{0:X} ", b));
             Console.WriteLine(Environment.NewLine);
         }
     }

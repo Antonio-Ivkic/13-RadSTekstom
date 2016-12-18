@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Unicode
+namespace Vsite.CSharp
 {
-    class Program
+    class Unicode
     {
         static void Main(string[] args)
         {

@@ -21,6 +21,16 @@ LeksičkeUsporedbe
 Usporedbe tekstova vodeći računa o leksičkim pravilima za pojedine kulture.
 
 
+PretvorbaStringaUObjekt
+-----------------------
+Primjer pretvorbe teksta u tip double: kako lokalizacijske postavke utječu na rezultat.
+
+
+PretvorbaStringaUDatum
+----------------------
+Primjer metode ParseExact kojom se izbjegavaju neodređenosti u formatu.
+
+
 Base64Encoding
 --------------
 Primjer base-64 kodiranja na tekstu. Uočiti da kodirani tekst zauzima više prostora od izvornog
@@ -30,7 +40,7 @@ jer koristi manji skup znakova (64 znaka)
 LokalizacijaDijaloga
 --------------------
 Kako se lokalizacija izvedodi na grafičkom sučelju:
-1. Inicijalno se svi dijalozi kreiraju sa svjstvima Localizable = false i Language = SystemDeafault
+1. Inicijalno se svi dijalozi kreiraju sa svjstvima Localizable = false i Language = SystemDefault
    (kliknuti na dijalog i pogledati Properties).
    Uz takve postavke Designer tekstove svih poruka upisuje izravno u kod (u datoteke xxx.Designer.cs)
    - otvoriti tu datoteku i pogledati kod metode InitializeComponents-

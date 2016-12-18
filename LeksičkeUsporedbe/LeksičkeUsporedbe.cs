@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Globalization;
 
-namespace LeksičkeUsporedbe
+namespace Vsite.CSharp
 {
-    class Program
+    class LeksičkeUsporedbe
     {
         static void Main(string[] args)
         {

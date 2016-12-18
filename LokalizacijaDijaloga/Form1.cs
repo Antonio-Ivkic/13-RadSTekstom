@@ -21,10 +21,9 @@ namespace Vsite.CSharp
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(comboBoxLanguages.SelectedItem.ToString());
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            resources.ApplyResources(this, Text);
             foreach (Control control in Controls)
-            {
                 resources.ApplyResources(control, control.Name);
-            }
         }
     }
 }

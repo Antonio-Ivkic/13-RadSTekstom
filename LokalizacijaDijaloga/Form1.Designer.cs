@@ -74,7 +74,7 @@
             this.Controls.Add(this.comboBoxLanguages);
             this.Controls.Add(this.labelLanguage);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Main Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 
