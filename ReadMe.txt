@@ -31,10 +31,11 @@ PretvorbaStringaUDatum
 Primjer metode ParseExact kojom se izbjegavaju neodređenosti u formatu.
 
 
-Base64Encoding
---------------
-Primjer base-64 kodiranja na tekstu. Uočiti da kodirani tekst zauzima više prostora od izvornog
-jer koristi manji skup znakova (64 znaka)
+KodiranjeTeksta
+---------------
+Primjer različitih kodiranja (ASCII, UTF-16, UTF-8) i base-64 kodiranja na tekstu. 
+Uočiti da kodirani tekst zauzima više prostora od izvornog jer koristi manji skup znakova 
+(64 znaka).
 
 
 LokalizacijaDijaloga
